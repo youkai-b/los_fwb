@@ -262,4 +262,9 @@ public interface StatusBarManagerInternal {
      * Called when requested to enter desktop from an app.
      */
     void enterDesktop(int displayId);
+
+    /**
+     * Custom extensions
+     */
+    void toggleCameraFlash();
 }
