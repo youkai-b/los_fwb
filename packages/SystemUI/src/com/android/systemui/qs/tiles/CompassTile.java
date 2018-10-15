@@ -25,6 +25,8 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import com.android.internal.util.custom.customUtils;
+
 import android.os.Handler;
 import android.os.Looper;
 import android.service.quicksettings.Tile;
@@ -183,6 +185,11 @@ public class CompassTile extends QSTileImpl<BooleanState> implements SensorEvent
     @Override
     public int getMetricsCategory() {
         return VIEW_UNKNOWN;
+    }
+
+    @Override
+    public boolean isAvailable() {
+        return customUtils.deviceHasCompass(mContext);
     }
 
     @Override
