@@ -140,4 +140,7 @@
 
     <!-- Channel name for Battery notifications -->
     <string name="battery_notification_channel_tv">Battery warning</string>
+
+    <!-- Label for UI element which allows to use lens on screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_lens_label">Lens</string>
 </resources>
