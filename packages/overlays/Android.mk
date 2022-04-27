@@ -27,6 +27,7 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationWaterfallOverlay \
 	FontNotoSerifSourceOverlay \
     IconPackAcherusAndroidOverlay \
+    IconPackAcherusSettingsOverlay \
     IconPackAcherusSystemUIOverlay \
     IconPackOOSAndroidOverlay \
     IconPackOOSLauncherOverlay \
