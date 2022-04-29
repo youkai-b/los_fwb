@@ -26,22 +26,27 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationTallOverlay \
 	DisplayCutoutEmulationWaterfallOverlay \
 	FontNotoSerifSourceOverlay \
-    IconPackAcherusAndroidOverlay \
-    IconPackAcherusSettingsOverlay \
+	IconPackAcherusAndroidOverlay \
+	IconPackAcherusLauncherOverlay \
+	IconPackAcherusSettingsOverlay \
+	IconPackAcherusSystemUIOverlay \
+	IconPackAcherusThemePickerOverlay \
     IconPackAcherusSystemUIOverlay \
-    IconPackOOSAndroidOverlay \
-    IconPackOOSLauncherOverlay \
-    IconPackOOSSettingsOverlay \
-    IconPackOOSSystemUIOverlay \
-    IconPackOOSThemePickerOverlay \
-    IconPackOutlineAndroidOverlay \
-    IconPackOutlineSettingsOverlay \
-    IconPackOutlineSystemUIOverlay \
-    IconPackPUIAndroidOverlay \
-    IconPackPUILauncherOverlay \
-    IconPackPUISettingsOverlay \
-    IconPackPUISystemUIOverlay \
-    IconPackPUIThemePickerOverlay \
+	IconPackOOSAndroidOverlay \
+	IconPackOOSLauncherOverlay \
+	IconPackOOSSettingsOverlay \
+	IconPackOOSSystemUIOverlay \
+	IconPackOOSThemePickerOverlay \
+	IconPackOutlineAndroidOverlay \
+	IconPackOutlineLauncherOverlay \
+	IconPackOutlineSettingsOverlay \
+	IconPackOutlineSystemUIOverlay \
+	IconPackOutlineThemePickerOverlay \
+	IconPackPUIAndroidOverlay \
+	IconPackPUILauncherOverlay \
+	IconPackPUISettingsOverlay \
+	IconPackPUISystemUIOverlay \
+	IconPackPUIThemePickerOverlay \
 	IconPackXperiaAndroidOverlay \
 	IconPackXperiaSettingsOverlay \
 	IconPackXperiaSystemUIOverlay \
