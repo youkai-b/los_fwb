@@ -42,6 +42,9 @@ LOCAL_REQUIRED_MODULES := \
     IconPackPUISettingsOverlay \
     IconPackPUISystemUIOverlay \
     IconPackPUIThemePickerOverlay \
+	IconPackXperiaAndroidOverlay \
+	IconPackXperiaSettingsOverlay \
+	IconPackXperiaSystemUIOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
