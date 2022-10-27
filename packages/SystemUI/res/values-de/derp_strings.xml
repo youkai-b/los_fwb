@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 DerpFest
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Inaktivitätsdisplay</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Inaktivitätsdisplay aus.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Inaktivitätsdisplay an.</string>
+
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_on_charge_label">AOD beim Laden</string>
+    <string name="quick_settings_aod_off_label">AOD aus</string>
+
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Koffein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Koffein aus.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Koffein an.</string>
+
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Pop-up</string>
+    <string name="accessibility_quick_settings_heads_up_off">Pop-up aus.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Pop-up an.</string>
+
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Battery Share</string>
+    <string name="quick_settings_powershare_enabled_label">Battery Share ist aktiviert</string>
+
+    <!-- SoundSearch Tile -->
+    <string name="quick_settings_sound_search">Musikerkennung</string>
+    <string name="quick_settings_sound_search_no_app">Entschuldigung, aber das funktioniert nicht, wenn Sie keine Musikerkennungsapp haben.</string>
+
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Synchronisation</string>
+    <string name="accessibility_quick_settings_sync_off">Synchronisierung aus.</string>
+    <string name="accessibility_quick_settings_sync_on">Synchronisierung an.</string>
+
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-Tethering</string>
+
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Wird verbunden\u2026</string>
+    <string name="vpn_credentials_hint">Bitte Zugangsdaten eingeben, um sich mit <xliff:g id="name">%s</xliff:g> zu verbinden</string>
+    <string name="vpn_credentials_username">Benutzername</string>
+    <string name="vpn_credentials_password">Passwort</string>
+    <string name="vpn_credentials_dialog_connect">Verbinden</string>
+
+    <!-- VPN tethering QS tile -->
+    <string name="vpn_tethering_label">VPN-Tethering</string>
+    <string name="vpn_tethering_changed_off">VPN-Tethering aus.</string>
+    <string name="vpn_tethering_changed_on">VPN-Tethering an.</string>
+
+    <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
+    <string name="clock">Uhr</string>
+
+    <!-- Advanced restart menu -->
+    <string name="global_action_restart_more">Neustarten\u2026</string>
+    <string name="global_action_restart_system">System</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_download">Download-Modus</string>
+    <string name="global_action_restart_fastboot">Fastbootd</string>
+    <string name="global_action_restart_progress">Neustarten\u2026</string>
+    <string name="global_action_restart_recovery_progress">In Recovery-Modus neustarten\u2026</string>
+    <string name="global_action_restart_bootloader_progress">In Bootloader-Modus neustarten\u2026</string>
+    <string name="global_action_restart_download_progress">In Download-Modus neustarten\u2026</string>
+    <string name="global_action_restart_fastboot_progress">Neustart in den Fastbootd-Modus\u2026</string>
+
+    <!-- Label for current user in power menu options dialog -->
+    <string name="global_action_current_user">Aktuell</string>
+    <string name="global_action_users">Benutzer</string>
+    <string name="global_action_panic">Panikauslöser</string>
+
+    <!-- Navigation bar dpad -->
+    <string name="accessibility_dpad_left">Cursor links</string>
+    <string name="accessibility_dpad_right">Cursor rechts</string>
+
+    <!-- Label for area where tiles can be added to the qs panel -->
+    <string name="drag_or_tap_to_add_tiles">Halten &amp; ziehen oder tippen zum Hinzufügen oder Entfernen</string>
+
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Gesichtserkennung …</string>
+
+    <!-- Statusbar Icons -->
+    <string name="status_bar_data_saver">Datensparmodus</string>
+
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Löschen</string>
+
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Screenshot löschen</string>
+
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming-Indikator</string>
+
+    <!-- Poweroff/Reboot/Recovery QS tile -->
+    <string name="quick_settings_poweroff_label">Ausschalten</string>
+    <string name="quick_settings_reboot_label">Neustart</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery</string>
+
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">SIM-Karte für mobile Daten wechseln</string>
+
+    <!-- Kill button in notification guts -->
+    <string name="force_stop_dlg_title">Beenden erzwingen?</string>
+    <string name="force_stop_dlg_text">Das Beenden einer App zu erzwingen kann zu unerwünschtem Verhalten führen.</string>
+
+    <!-- Screenshot Delete Toast -->
+    <string name="delete_screenshot_toast">Screenshot gelöscht</string>
+
+    <!-- Advance location quick setting tile -->
+    <string name="quick_settings_secondary_location_off"></string>
+    <string name="accessibility_quick_settings_location_off">Standortdienste: Deaktiviert.</string>
+    <string name="quick_settings_location_secondary_battery_saving">Energiesparmodus</string>
+    <string name="accessibility_quick_settings_location_battery_saving">Standortdienste: Energiesparmodus.</string>
+    <string name="quick_settings_location_secondary_gps_only">Nur Gerät</string>
+    <string name="accessibility_quick_settings_location_gps_only">Standortdienste: Nur Gerät.</string>
+    <string name="quick_settings_location_secondary_high_accuracy">Hohe Genauigkeit</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Standortdienste: Hohe Genauigkeit.</string>
+
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">Stopppunkt anzeigen\nGedrückthalten zum Verschieben</string>
+    <string name="screenrecord_lowquality_label">Geringere Qualität</string>
+    <string name="screenrecord_longer_timeout_switch_label">Max. Dateigröße erhöhen\nGröße der Aufnahme auf 15 GB begrenzen</string>
+    <string name="screenrecord_hevc_switch_label">HEVC aktivieren</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash-Ladevorgang (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Dash-Ladevorgang</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp-Ladevorgang (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Warp-Ladevorgang</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • VOOC-Ladevorgang (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • VOOC-Ladevorgang</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_turbo_power_time"><xliff:g id="percentage">%2$s</xliff:g> • Turbo-Ladevorgang (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_turbo_charging"><xliff:g id="percentage">%s</xliff:g> • Turbo-Ladevorgang</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with an oem fast power charger. Should match keyguard_plugged_in_turbo_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_oem_power_time"><xliff:g id="percentage">%2$s</xliff:g> • Schnellladen (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_oem_charging"><xliff:g id="percentage">%s</xliff:g> • Schnellladen</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a SuperDart charger. Should match keyguard_plugged_in_superdart_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_superdart_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • SuperDart-Ladevorgang (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%1$s</xliff:g> bis zur vollständigen Aufladung)</string>
+    <string name="keyguard_plugged_in_superdart_charging"><xliff:g id="percentage">%s</xliff:g> • SuperDart-Ladevorgang</string>
+
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">Kompass</string>
+    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Initialisierung\u2026</string>
+    <string name="accessibility_quick_settings_compass_off">Kompass AUS</string>
+    <string name="accessibility_quick_settings_compass_on">Kompass AN</string>
+    <string name="accessibility_quick_settings_compass_changed_off">Kompass abgeschaltet.</string>
+    <string name="accessibility_quick_settings_compass_changed_on">Kompass eingeschaltet.</string>
+    <string name="quick_settings_compass_N">N</string>
+    <string name="quick_settings_compass_NE">NO</string>
+    <string name="quick_settings_compass_E">O</string>
+    <string name="quick_settings_compass_SE">SO</string>
+    <string name="quick_settings_compass_S">S</string>
+    <string name="quick_settings_compass_SW">SW</string>
+    <string name="quick_settings_compass_W">W</string>
+    <string name="quick_settings_compass_NW">NW</string>
+
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Ton</string>
+    <string name="quick_settings_sound_ring">Klingeln</string>
+    <string name="quick_settings_sound_vibrate">Vibrieren</string>
+    <string name="quick_settings_sound_silent">Still</string>
+
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">Aktualisierungsrate</string>
+    <string name="auto_mode_label">Auto</string>
+
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+     <string name="quick_settings_internet_hotspot_summary_num_devices">{count, plural,
+        =1 {# Gerät verbunden}
+        other {# Geräte verbunden}
+    }</string>
+
+    <!-- DerpSpace Tile -->
+    <string name="quick_derpspace_toast">LOL, you really thought that long click will take you somewhere!!!</string>
+
+    <!-- Preferred network tile -->
+    <string name="quick_settings_preferred_network_label">Bevorzugtes Netzwerk</string>
+    <string name="quick_settings_preferred_network_lte">4G/LTE</string>
+    <string name="quick_settings_preferred_network_nr">5G/NR</string>
+    <string name="quick_settings_preferred_network_unsupported">Nicht unterstützt</string>
+
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth ist ausgeschaltet</string>
+    <string name="tap_a_device_to_connect">Auf ein Gerät tippen, um es zu verbinden</string>
+</resources>
