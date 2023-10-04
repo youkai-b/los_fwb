@@ -110,6 +110,7 @@ import com.android.internal.policy.SystemBarUtils;
 import com.android.internal.util.LatencyTracker;
 import com.android.keyguard.ActiveUnlockConfig;
 import com.android.keyguard.FaceAuthApiRequestReason;
+import com.android.keyguard.FaceIconViewController;
 import com.android.keyguard.KeyguardClockSwitch.ClockSize;
 import com.android.keyguard.KeyguardStatusView;
 import com.android.keyguard.KeyguardStatusViewController;
@@ -679,6 +680,8 @@ public final class NotificationPanelViewController implements Dumpable {
                 }
             };
 
+    private final FaceIconViewController mFaceIconViewController;
+
     @Inject
     public NotificationPanelViewController(NotificationPanelView view,
             @Main Handler handler,
@@ -757,7 +760,8 @@ public final class NotificationPanelViewController implements Dumpable {
             KeyguardLongPressViewModel keyguardLongPressViewModel,
             KeyguardInteractor keyguardInteractor,
             TunerService tunerService,
-            Context context) {
+            Context context,
+            FaceIconViewController faceIconViewController) {
         mInteractionJankMonitor = interactionJankMonitor;
         keyguardStateController.addCallback(new KeyguardStateController.Callback() {
             @Override
@@ -909,6 +913,7 @@ public final class NotificationPanelViewController implements Dumpable {
         mScreenOffAnimationController = screenOffAnimationController;
         mUnlockedScreenOffAnimationController = unlockedScreenOffAnimationController;
         mLastDownEvents = new NPVCDownEventState.Buffer(MAX_DOWN_EVENT_BUFFER_SIZE);
+        mFaceIconViewController = faceIconViewController;
 
         int currentMode = navigationModeController.addListener(
                 mode -> mIsGestureNavigation = QuickStepContract.isGesturalMode(mode));
@@ -2544,6 +2549,7 @@ public final class NotificationPanelViewController implements Dumpable {
         alpha *= mBottomAreaShadeAlpha;
         mKeyguardBottomAreaInteractor.setAlpha(alpha);
         mLockIconViewController.setAlpha(alpha);
+        mFaceIconViewController.setAlpha(alpha);
     }
 
     private void onExpandingFinished() {
@@ -4631,6 +4637,10 @@ public final class NotificationPanelViewController implements Dumpable {
             }
             if (mKeyguardUserSwitcherController != null) {
                 mKeyguardUserSwitcherController.setAlpha(alpha);
+            }
+
+            if (mFaceIconViewController != null) {
+                mFaceIconViewController.setAlpha(alpha);
             }
         };
     }
