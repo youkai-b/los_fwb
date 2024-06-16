@@ -989,9 +989,8 @@ public class KeyguardIndicationController {
     }
 
     private void showFaceUnlockRecognizingMessage() {
-        String faceUnlockMessage = mContext.getResources().getString(
-            R.string.face_unlock_recognizing);
-        showBiometricMessage(faceUnlockMessage);
+        showBiometricMessage(mContext.getResources().getString(
+                                    R.string.face_unlock_recognizing), FACE);
     }
 
     private void hideFaceUnlockRecognizingMessage() {
