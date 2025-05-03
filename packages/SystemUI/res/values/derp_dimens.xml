@@ -90,6 +90,7 @@
     <dimen name="status_bar_battery_icon_height_landscape_ios16">12.0dip</dimen>
     <dimen name="status_bar_battery_icon_height_landscape_origami">12.0dip</dimen>
     <dimen name="status_bar_battery_icon_height_landscape_miui_pill">12.0dip</dimen>
+    <dimen name="status_bar_battery_icon_height_landscape_oneui7">12.0dip</dimen>
 
     <!-- Width of the landscape battery icon in the status bar. -->
     <dimen name="status_bar_battery_icon_width_landscape">20dp</dimen>
@@ -101,6 +102,7 @@
     <dimen name="status_bar_battery_icon_width_landscape_ios16">24.0dip</dimen>
     <dimen name="status_bar_battery_icon_width_landscape_origami">20.0dip</dimen>
     <dimen name="status_bar_battery_icon_width_landscape_miui_pill">24.0dip</dimen>
+    <dimen name="status_bar_battery_icon_width_landscape_oneui7">24.0dip</dimen>
 
     <!-- QS Header height full -->
     <dimen name="qs_header_height_full">200dp</dimen>
