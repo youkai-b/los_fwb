@@ -18,7 +18,7 @@ import com.android.systemui.qs.tileimpl.QSTileImpl
 import com.android.systemui.qs.tiles.AlarmTile
 import com.android.systemui.qs.tiles.CameraToggleTile
 import com.android.systemui.qs.tiles.DndTile
-import com.android.systemui.qs.tiles.FlashlightStrengthTile
+import com.android.systemui.qs.tiles.FlashlightTile
 import com.android.systemui.qs.tiles.LocationTile
 import com.android.systemui.qs.tiles.MicrophoneToggleTile
 import com.android.systemui.qs.tiles.UiModeNightTile
@@ -40,11 +40,11 @@ interface PolicyModule {
     @StringKey(WorkModeTile.TILE_SPEC)
     fun bindWorkModeTile(workModeTile: WorkModeTile): QSTileImpl<*>
 
-    /** Inject FlashlightStrengthTile into tileMap in QSModule */
+    /** Inject FlashlightTile into tileMap in QSModule */
     @Binds
     @IntoMap
-    @StringKey(FlashlightStrengthTile.TILE_SPEC)
-    fun bindFlashlightStrengthTile(flashlightStrengthTile: FlashlightStrengthTile): QSTileImpl<*>
+    @StringKey(FlashlightTile.TILE_SPEC)
+    fun bindFlashlightTile(flashlightTile: FlashlightTile): QSTileImpl<*>
 
     /** Inject LocationTile into tileMap in QSModule */
     @Binds
