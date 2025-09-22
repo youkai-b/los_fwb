@@ -60,6 +60,8 @@ import java.util.concurrent.Executor;
 
 import javax.inject.Inject;
 
+import lineageos.providers.LineageSettings;
+
 public class BrightnessController implements ToggleSlider.Listener, MirroredBrightnessController {
     private static final String TAG = "CentralSurfaces.BrightnessController";
     private static final int SLIDER_ANIMATION_DURATION = 3000;
@@ -75,7 +77,7 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
     private static final Uri BRIGHTNESS_FOR_VR_FLOAT_URI =
             Settings.System.getUriFor(Settings.System.SCREEN_BRIGHTNESS_FOR_VR_FLOAT);
     private static final Uri QS_BRIGHTNESS_SLIDER_HAPTIC_URI =
-            Settings.System.getUriFor(Settings.System.QS_BRIGHTNESS_SLIDER_HAPTIC);
+            LineageSettings.System.getUriFor(LineageSettings.System.QS_BRIGHTNESS_SLIDER_HAPTIC);
 
     private final float mMinimumBacklightForVr;
     private final float mMaximumBacklightForVr;
@@ -139,8 +141,8 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
             } else if (BRIGHTNESS_FOR_VR_FLOAT_URI.equals(uri)) {
                 mBackgroundHandler.post(mUpdateSliderRunnable);
             } else if (QS_BRIGHTNESS_SLIDER_HAPTIC_URI.equals(uri)) {
-                mBrightnessSliderHaptic = Settings.System.getIntForUser(mContext.getContentResolver(),
-                    Settings.System.QS_BRIGHTNESS_SLIDER_HAPTIC, 0, UserHandle.USER_CURRENT) == 1;
+                mBrightnessSliderHaptic = LineageSettings.System.getIntForUser(mContext.getContentResolver(),
+                    LineageSettings.System.QS_BRIGHTNESS_SLIDER_HAPTIC, 0, UserHandle.USER_CURRENT) == 1;
             } else {
                 mBackgroundHandler.post(mUpdateModeRunnable);
                 mBackgroundHandler.post(mUpdateSliderRunnable);
@@ -196,8 +198,8 @@ public class BrightnessController implements ToggleSlider.Listener, MirroredBrig
             mUpdateModeRunnable.run();
             mUpdateSliderRunnable.run();
 
-            mBrightnessSliderHaptic = Settings.System.getIntForUser(mContext.getContentResolver(),
-                Settings.System.QS_BRIGHTNESS_SLIDER_HAPTIC, 0, UserHandle.USER_CURRENT) == 1;
+            mBrightnessSliderHaptic = LineageSettings.System.getIntForUser(mContext.getContentResolver(),
+                LineageSettings.System.QS_BRIGHTNESS_SLIDER_HAPTIC, 0, UserHandle.USER_CURRENT) == 1;
 
             mHandler.sendEmptyMessage(MSG_ATTACH_LISTENER);
         }
