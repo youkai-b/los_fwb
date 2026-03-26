@@ -823,6 +823,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
 
     private boolean mLongSwipeDown;
     private CameraAvailbilityListener mCameraAvailabilityListener;
+    private ScreenshotHelper mScreenshotHelper;
 
     private SwipeToScreenshotListener mSwipeToScreenshot;
 
@@ -2247,6 +2248,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             case KILL_APP:
                 ActionUtils.killForegroundApp(mContext, mCurrentUserId);
                 break;
+            case SCREENSHOT:
+                takeScreenshot(SCREENSHOT_KEY_OTHER);
+                notifyKeyGestureCompleted(event, KeyGestureEvent.KEY_GESTURE_TYPE_TAKE_SCREENSHOT);
+                break;
             default:
                 break;
         }
@@ -2543,6 +2548,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         }
 
         mHandler = new PolicyHandler(injector.getLooper());
+        mScreenshotHelper = new ScreenshotHelper(mContext);
         mSwipeToScreenshot = new SwipeToScreenshotListener(mContext, new SwipeToScreenshotListener.Callbacks() {
             @Override
             public void onSwipeThreeFinger() {
@@ -7852,5 +7858,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         public boolean isAnyCameraInUse() {
             return !mCameraInUse.isEmpty();
         }
+    }
+
+    private void takeScreenshot(int source) {
+        mScreenshotHelper.takeScreenshot(source, mHandler, null);
     }
 }
